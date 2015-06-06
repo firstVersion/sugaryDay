@@ -2,6 +2,7 @@
 package com.example.kuro.sugaryday;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,5 +37,17 @@ public class MainActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void toDate(){
+        //新しいインテントの生成
+        Intent intent = new Intent(this, DateActivity.class);
+        //インテント開始
+        startActivity(intent);
+    }
+    public void toPresenter(){
+        //新しいインテントの生成
+        Intent intent = new Intent(this, DateActivity.class);
+        //インテント開始
+        startActivity(intent);
     }
 }
